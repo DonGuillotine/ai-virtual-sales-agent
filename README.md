@@ -1,4 +1,4 @@
-# Virtual Sales Agent
+# [Virtual Sales Agent](https://techshopai.netlify.app/)
 
 An intelligent conversational shopping assistant that provides personalized product recommendations, processes orders, and handles customer service inquiries using advanced AI technology.
 
