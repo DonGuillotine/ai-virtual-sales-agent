@@ -4,7 +4,6 @@ An intelligent conversational shopping assistant that provides personalized prod
 
 <img width="1280" alt="hero_img-3" src="https://github.com/user-attachments/assets/0d2b5fbd-9def-4fe7-9de2-932e4629369e" />
 
-
 ## 📋 Table of Contents
 
 - [Features](#features)
@@ -14,6 +13,8 @@ An intelligent conversational shopping assistant that provides personalized prod
 - [Running the Application](#running-the-application)
 - [Usage Examples](#usage-examples)
 - [Evaluation Report](#evaluation-report)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## ✨ Features
 
@@ -74,7 +75,7 @@ Insait
 
 ```bash
 git clone https://github.com/DonGuillotine/ai-virtual-sales-agent.git
-cd ai-virtual-sales-agent
+cd ai-virtual-sales-agent.git
 ```
 
 ### Step 2: Create and Activate Virtual Environment
@@ -117,6 +118,12 @@ streamlit run main.py
 ```
 
 The application will be available at `http://localhost:8501`.
+
+### Reset the Database (If Needed)
+
+```bash
+python reset_database.py
+```
 
 ## 💬 Usage Examples
 
@@ -276,7 +283,7 @@ Agent: Thank you for providing your contact information. I've recorded your requ
 
 ### Test Scenarios and Dialogues
 
-I evaluated the virtual sales agent across five key scenarios:
+We evaluated the virtual sales agent across five key scenarios:
 
 1. **Product search and recommendation**
 2. **Product comparison**
@@ -307,3 +314,15 @@ I evaluated the virtual sales agent across five key scenarios:
 - **Multi-product Orders**: Currently handles one product at a time; could be enhanced for cart functionality
 - **Payment Processing**: Future versions could integrate with payment gateways
 - **Proactive Suggestions**: Could be more proactive in suggesting complementary products
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
