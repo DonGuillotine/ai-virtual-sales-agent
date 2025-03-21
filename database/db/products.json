@@ -1,0 +1,162 @@
+[
+    {
+        "product_name": "Logitech G502 HERO",
+        "description": "High-performance gaming mouse with HERO 25K sensor, 11 programmable buttons, and customizable weights. Ergonomic design ideal for medium to large hands with textured rubber grips.",
+        "category": "Gaming Mice",
+        "price": 49.99,
+        "quantity": 75,
+        "image_url": "https://i.postimg.cc/kXbzH59W/g502-hero-gallery-2-nb.png"
+    },
+    {
+        "product_name": "Logitech G604 LIGHTSPEED",
+        "description": "Wireless gaming mouse with 15 programmable controls and dual connectivity. Features a larger frame specifically designed for palm grip and larger hands. Extended battery life of up to 240 hours.",
+        "category": "Gaming Mice",
+        "price": 99.99,
+        "quantity": 45,
+        "image_url": "https://i.postimg.cc/s2VL19WJ/Logitech-G604-Lightspeed-Wireless-Optical-Gaming-Mouse-1.png"
+    },
+    {
+        "product_name": "Razer DeathAdder V3 Pro",
+        "description": "Ultra-lightweight ergonomic gaming mouse with Razer's Focus Pro 30K optical sensor. Compact design best suited for small to medium hands. 90-hour battery life with HyperSpeed wireless.",
+        "category": "Gaming Mice",
+        "price": 149.99,
+        "quantity": 35,
+        "image_url": "https://i.postimg.cc/FHt5FLGP/61-P-s-PNp-FFL-removebg-preview.png"
+    },
+    {
+        "product_name": "ASUS ROG Strix G15",
+        "description": "Gaming laptop with AMD Ryzen 9 processor, NVIDIA GeForce RTX 3060, 16GB RAM, 512GB SSD, and 15.6\" FHD 144Hz display. Features RGB keyboard and advanced cooling system.",
+        "category": "Gaming Laptops",
+        "price": 1299.99,
+        "quantity": 20,
+        "image_url": "https://i.postimg.cc/4yrM3DvK/257212-0-rz72nt.png"
+    },
+    {
+        "product_name": "MSI Stealth 15M",
+        "description": "Ultra-thin gaming laptop with Intel Core i7, NVIDIA GeForce RTX 3050 Ti, 16GB RAM, 512GB NVMe SSD, and 15.6\" FHD 144Hz display. Weighs only 3.7 lbs with Wi-Fi 6E support.",
+        "category": "Gaming Laptops",
+        "price": 1099.99,
+        "quantity": 15,
+        "image_url": "https://i.postimg.cc/hjYZCk5C/MSI-GL65-9-SDK-026-GAMING-1.png"
+    },
+    {
+        "product_name": "Alienware m17 R5",
+        "description": "High-performance gaming laptop with AMD Ryzen 9 6900HX, NVIDIA GeForce RTX 3080 Ti, 32GB DDR5 RAM, 1TB SSD, and 17.3\" QHD 240Hz display. Features Alienware's Cryo-Tech cooling.",
+        "category": "Gaming Laptops",
+        "price": 2499.99,
+        "quantity": 10,
+        "image_url": "https://i.postimg.cc/Rh3y4St5/Dell-Alienware-M17-R5-Gaming-Laptop-6-KRXF-2.png"
+    },
+    {
+        "product_name": "Samsung Galaxy S21",
+        "description": "5G smartphone with 6.2\" Dynamic AMOLED display, Exynos 2100 processor, 8GB RAM, 128GB storage, 4000mAh battery, and triple rear camera system (12MP+12MP+64MP). Features 8K video recording.",
+        "category": "Smartphones",
+        "price": 799.99,
+        "quantity": 50,
+        "image_url": "https://i.postimg.cc/4xzCYxSX/1-13-removebg-preview.png"
+    },
+    {
+        "product_name": "Samsung Galaxy S22",
+        "description": "5G smartphone with 6.1\" Dynamic AMOLED 2X display, Snapdragon 8 Gen 1 processor, 8GB RAM, 128GB storage, 3700mAh battery with 45W fast charging. Enhanced camera system with improved night mode and 3x optical zoom.",
+        "category": "Smartphones",
+        "price": 899.99,
+        "quantity": 65,
+        "image_url": "https://i.postimg.cc/bw8PHnbZ/samsung-galaxy-s22-ultra-with-pen-high-quality-transparent-free-png.png"
+    },
+    {
+        "product_name": "iPhone 14 Pro",
+        "description": "Premium smartphone with 6.1\" Super Retina XDR display with ProMotion, A16 Bionic chip, 6GB RAM, 256GB storage, and triple camera system (48MP+12MP+12MP). Features Dynamic Island interface and Always-On display.",
+        "category": "Smartphones",
+        "price": 1099.99,
+        "quantity": 40,
+        "image_url": "https://i.postimg.cc/8Ct0vJBg/iphone-14-pro-max-gold.png"
+    },
+    {
+        "product_name": "Google Pixel 7 Pro",
+        "description": "Android smartphone with 6.7\" LTPO AMOLED display, Google Tensor G2 chip, 12GB RAM, 128GB storage, and triple camera system with 5x optical zoom. Features best-in-class computational photography.",
+        "category": "Smartphones",
+        "price": 899.99,
+        "quantity": 30,
+        "image_url": "https://i.postimg.cc/Sxb3bpN3/google-pixel-7.png"
+    },
+    {
+        "product_name": "Corsair K100 RGB",
+        "description": "Premium mechanical gaming keyboard with CORSAIR OPX optical-mechanical switches, per-key RGB backlighting, 6 dedicated macro keys, and aluminum frame. Includes palm rest and multimedia controls.",
+        "category": "Keyboards",
+        "price": 229.99,
+        "quantity": 25,
+        "image_url": "https://i.postimg.cc/CKNW460t/320556-04-440440.png"
+    },
+    {
+        "product_name": "Logitech G915 TKL",
+        "description": "Low-profile wireless mechanical gaming keyboard with tactile switches, RGB lighting, and aircraft-grade aluminum alloy frame. Tenkeyless design saves space without sacrificing performance.",
+        "category": "Keyboards",
+        "price": 199.99,
+        "quantity": 35,
+        "image_url": "https://i.postimg.cc/pLQ721mT/image-4175065-removebg-preview.png"
+    },
+    {
+        "product_name": "Razer BlackWidow V3",
+        "description": "Mechanical gaming keyboard with Razer Green switches, doubleshot ABS keycaps, and Chroma RGB lighting. Features digital dial and media keys with plush leatherette wrist rest.",
+        "category": "Keyboards",
+        "price": 139.99,
+        "quantity": 40,
+        "image_url": "https://i.postimg.cc/mrRvCWvC/1-removebg-preview.png"
+    },
+    {
+        "product_name": "Logitech C920x HD Pro",
+        "description": "Full HD 1080p webcam with dual microphones, automatic light correction, and 78° field of view. Perfect for streaming, video conferencing, and content creation.",
+        "category": "Webcams",
+        "price": 69.99,
+        "quantity": 55,
+        "image_url": "https://i.postimg.cc/pTL3cYXd/19623227-5994-removebg-preview.png"
+    },
+    {
+        "product_name": "Razer Kiyo Pro",
+        "description": "USB camera with uncompressed 1080p 60FPS, adaptive light sensor, HDR-enabled, and wide-angle lens with adjustable FOV. Optimized for streaming and professional video calls.",
+        "category": "Webcams",
+        "price": 129.99,
+        "quantity": 30,
+        "image_url": "https://i.postimg.cc/05M98PPy/razer-kiyo-pro-ultra-500x500.png"
+    },
+    {
+        "product_name": "Elgato Facecam",
+        "description": "Premium webcam with Sony STARVIS CMOS sensor, f/2.4 24mm all-glass lens, and uncompressed 1080p60 video. Includes Camera Hub software for professional-level customization.",
+        "category": "Webcams",
+        "price": 169.99,
+        "quantity": 25,
+        "image_url": "https://i.postimg.cc/NMFPksp9/dy9ctvzx74crfgxstap6.png"
+    },
+    {
+        "product_name": "SteelSeries Arctis Pro",
+        "description": "High fidelity gaming headset with premium speaker drivers, ClearCast bidirectional microphone, and lightweight aluminum alloy and steel construction. Features DTS Headphone:X v2.0 surround sound.",
+        "category": "Gaming Audio",
+        "price": 179.99,
+        "quantity": 45,
+        "image_url": "https://i.postimg.cc/jSXb8jQZ/45c96c252b054692829aa517f87ed68c.png"
+    },
+    {
+        "product_name": "HyperX Cloud Alpha",
+        "description": "Gaming headset with dual chamber drivers, detachable noise-cancellation microphone, and memory foam ear cushions. Durable aluminum frame with expanded headband for long-lasting comfort.",
+        "category": "Gaming Audio",
+        "price": 99.99,
+        "quantity": 60,
+        "image_url": "https://i.postimg.cc/28nmZGqp/pngegg.png"
+    },
+    {
+        "product_name": "Samsung Odyssey G7",
+        "description": "32-inch QLED gaming monitor with 1000R curved screen, 240Hz refresh rate, 1ms response time, and WQHD resolution. Features G-Sync compatibility and HDR600 support.",
+        "category": "Monitors",
+        "price": 699.99,
+        "quantity": 20,
+        "image_url": "https://i.postimg.cc/NG3BFSj7/th-curved-gaming-cg75-lc32g75tqsexxt-backblack-256637200.png"
+    },
+    {
+        "product_name": "LG UltraGear 27GP950",
+        "description": "27-inch Nano IPS gaming monitor with 4K UHD resolution, 144Hz refresh rate (160Hz OC), 1ms response time, HDMI 2.1, and G-Sync compatibility. Features HDR600 with 98% DCI-P3 color gamut.",
+        "category": "Monitors",
+        "price": 799.99,
+        "quantity": 15,
+        "image_url": "https://i.postimg.cc/HWKF3MGp/1077610973-6ca7caf7-6343-4575-a9df-3ef02acc06a0-removebg-preview.png"
+    }
+]

@@ -142,8 +142,6 @@ venv.bak/
 *.DS_Store
 
 *.log
-*.db
-*.json
 
 # mkdocs documentation
 /site
