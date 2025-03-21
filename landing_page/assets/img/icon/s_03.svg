@@ -1,0 +1,25 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.9165 16.625C9.9165 18.865 11.7598 20.7083 13.9998 20.7083C16.2398 20.7083 18.0832 18.865 18.0832 16.625" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.2785 2.33331L6.05518 6.56831" stroke="url(#paint0_linear_96_93)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.7217 2.33331L21.945 6.56831" stroke="url(#paint1_linear_96_93)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.3335 9.15828C2.3335 6.99995 3.4885 6.82495 4.9235 6.82495H23.0768C24.5118 6.82495 25.6668 6.99995 25.6668 9.15828C25.6668 11.6666 24.5118 11.4916 23.0768 11.4916H4.9235C3.4885 11.4916 2.3335 11.6666 2.3335 9.15828Z" stroke="url(#paint2_linear_96_93)" stroke-width="2"/>
+<path d="M4.0835 11.6666L5.7285 21.7466C6.10183 24.01 7.00016 25.6666 10.3368 25.6666H17.3718C21.0002 25.6666 21.5368 24.08 21.9568 21.8866L23.9168 11.6666" stroke="url(#paint3_linear_96_93)" stroke-width="2" stroke-linecap="round"/>
+<defs>
+<linearGradient id="paint0_linear_96_93" x1="5.98589" y1="4.40376" x2="10.24" y2="4.40376" gradientUnits="userSpaceOnUse">
+<stop stop-color="#99E9A5"/>
+<stop offset="1" stop-color="#3847EF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_96_93" x1="17.6524" y1="4.40376" x2="21.9065" y2="4.40376" gradientUnits="userSpaceOnUse">
+<stop stop-color="#99E9A5"/>
+<stop offset="1" stop-color="#3847EF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_96_93" x1="1.95068" y1="9.10772" x2="25.4542" y2="9.10772" gradientUnits="userSpaceOnUse">
+<stop stop-color="#99E9A5"/>
+<stop offset="1" stop-color="#3847EF"/>
+</linearGradient>
+<linearGradient id="paint3_linear_96_93" x1="3.75811" y1="18.5111" x2="23.7361" y2="18.5111" gradientUnits="userSpaceOnUse">
+<stop stop-color="#99E9A5"/>
+<stop offset="1" stop-color="#3847EF"/>
+</linearGradient>
+</defs>
+</svg>
