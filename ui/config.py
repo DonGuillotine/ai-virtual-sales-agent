@@ -16,4 +16,4 @@ def set_page_style():
             css = f.read()
         st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
     except Exception as e:
-        st.error(f"Failed to load CSS: {str(e)}")git a
+        st.error(f"Failed to load CSS: {str(e)}")
