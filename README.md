@@ -11,6 +11,7 @@ An intelligent conversational shopping assistant that provides personalized prod
 - [Technology Stack](#technology-stack)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
+- [Database Migration System](#database-migration-system)
 - [Running the Application](#running-the-application)
 - [Usage Examples](#usage-examples)
 - [Evaluation Report](#evaluation-report)
@@ -107,6 +108,93 @@ LANGSMITH_PROJECT=virtual-sales-agent  # Optional
 ```bash
 python setup_database.py
 ```
+
+## 🪄 Database Migration System
+
+### Overview
+
+The Virtual Sales Agent includes a robust database migration system that allows for schema evolution over time. This system tracks all schema changes, applies them in order, and ensures database consistency across environments.
+
+### Features
+
+- **Version Tracking**: Automatically manages migration version history
+- **SQL-Based Migrations**: Define schema changes using familiar SQL syntax
+- **Transactional Safety**: All migrations run within transactions for safety
+- **Developer Tools**: Convenient scripts for migration creation and management
+
+### Migration Management
+
+#### Setting Up Migrations
+
+Initialize the migration system with:
+
+```bash
+python setup_migrations.py
+```
+
+This creates the necessary directory structure and converts your existing schema into the initial migration.
+
+#### Creating New Migrations
+
+To create a new migration:
+
+```bash
+python create_migration.py add_product_ratings
+```
+
+This creates a new numbered migration file in `database/migrations/versions/` where you can define your schema changes:
+
+```sql
+-- Migration: add_product_ratings
+-- Created: 2025-03-24 14:30:25
+
+-- Write your migration SQL here
+ALTER TABLE products ADD COLUMN rating FLOAT DEFAULT 0;
+ALTER TABLE products ADD COLUMN review_count INTEGER DEFAULT 0;
+```
+
+#### Applying Migrations
+
+Migrations are automatically applied when the application starts. You can also apply them manually with:
+
+```bash
+python reset_database.py
+```
+
+This resets the database and applies all migrations in sequence.
+
+### Migration Structure
+
+Migrations are stored in SQL files with version numbers:
+
+```
+database/migrations/
+└── versions/
+    ├── 001_initial_schema.sql
+    ├── 002_sample_migration.sql
+    ├── 003_add_product_ratings.sql
+    └── ...
+```
+
+The system tracks which migrations have been applied in the `schema_migrations` table, ensuring each migration runs only once.
+
+### Benefits
+
+- **Collaborative Development**: Multiple developers can make schema changes without conflicts
+- **Deployment Safety**: Consistent schema across development, testing, and production
+- **Version Control**: All database changes are tracked in version control
+- **Rollback Capability**: Clear history of changes with ability to restore previous states
+- **Documentation**: Self-documenting schema evolution history
+
+### Best Practices
+
+- Keep migrations small and focused on specific changes
+- Always test migrations on development before applying to production
+- Include both "up" (apply) and "down" (rollback) logic when possible
+- Document complex migrations with comments
+- Never modify existing migration files after they've been committed
+
+For more information on database management, refer to the code documentation in the `database/migrations/` directory.
 
 ## 🚀 Running the Application
 
