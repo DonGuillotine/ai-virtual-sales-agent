@@ -372,7 +372,8 @@ def search_products_recommendations(config: RunnableConfig) -> Dict[str, str]:
                     Category,
                     Description,
                     Price,
-                    Quantity
+                    Quantity,
+                    ImageUrl
                 FROM products
                 WHERE Quantity > 0
                 ORDER BY RANDOM()
@@ -392,7 +393,8 @@ def search_products_recommendations(config: RunnableConfig) -> Dict[str, str]:
                     Category,
                     Description,
                     Price,
-                    Quantity
+                    Quantity,
+                    ImageUrl
                 FROM products
                 WHERE Category IN ({placeholders})
                 AND Quantity > 0
@@ -415,6 +417,7 @@ def search_products_recommendations(config: RunnableConfig) -> Dict[str, str]:
                     "description": product["Description"],
                     "price": float(product["Price"]),
                     "stock": product["Quantity"],
+                    "image_url": product["ImageUrl"],
                 }
                 for product in recommendations
             ],
