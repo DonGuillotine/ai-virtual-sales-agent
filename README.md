@@ -12,6 +12,7 @@ An intelligent conversational shopping assistant that provides personalized prod
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Database Migration System](#database-migration-system)
+- [Testing](#testing)
 - [Running the Application](#running-the-application)
 - [Usage Examples](#usage-examples)
 - [Evaluation Report](#evaluation-report)
@@ -195,6 +196,82 @@ The system tracks which migrations have been applied in the `schema_migrations` 
 - Never modify existing migration files after they've been committed
 
 For more information on database management, refer to the code documentation in the `database/migrations/` directory.
+
+## 🧪 Testing
+
+### Overview
+
+This project includes a comprehensive testing suite to ensure core functionality works as expected. Tests are designed to be straightforward and maintainable, focusing on key functionality.
+
+### Test Structure
+
+Tests are organized in the `tests/` directory:
+
+```
+tests/
+├── __init__.py
+├── test_database.py
+└── test_graph.py
+```
+
+### Database Tests
+
+The database tests (`test_database.py`) verify that:
+- The database can be created successfully
+- Products can be inserted correctly into the database
+- Products can be loaded from a JSON file
+- Database connections are managed properly
+
+Database tests use a temporary database location to avoid affecting the production database.
+
+### Graph Tests
+
+The graph tests (`test_graph.py`) verify that:
+- The LangGraph can be initialized and invoked
+- The assistant can process basic customer inquiries
+- The conversation flow works as expected
+
+These tests use mocks to avoid making actual API calls to language models.
+
+### Running Tests
+
+You can run all tests with the included test runner:
+
+```bash
+python run_tests.py
+```
+
+Or run individual test files:
+
+```bash
+python -m unittest tests/test_database.py
+python -m unittest tests/test_graph.py
+```
+
+### Test Dependencies
+
+Additional dependencies for testing are specified in `requirements-dev.txt`:
+
+```
+pytest==7.4.0
+coverage==7.3.1
+```
+
+Install them with:
+
+```bash
+pip install -r requirements-dev.txt
+```
+
+### Test Coverage
+
+To generate a test coverage report:
+
+```bash
+coverage run -m unittest discover
+coverage report
+coverage html  # for a detailed HTML report
+```
 
 ## 🚀 Running the Application
 
