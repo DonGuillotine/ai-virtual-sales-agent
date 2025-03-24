@@ -4,6 +4,7 @@ import sqlite3
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Generator, Optional
+from database.migrations.manager import MigrationManager
 
 import pandas as pd
 
@@ -38,15 +39,18 @@ class DatabaseManager:
             # Create database file
             with self.get_connection() as conn:
                 logger.info(f"Created database at {self.config.db_path}")
-
-            # Execute schema if provided
-            if self.config.schema_path:
-                return self.execute_sql_file(self.config.schema_path)
-            return True
-
+            
+            # Apply migrations
+            return self.run_migrations()
+            
         except Exception as e:
             logger.error(f"Failed to create database: {e}")
             return False
+    
+    def run_migrations(self) -> bool:
+        """Runs all pending database migrations."""
+        migration_manager = MigrationManager(self)
+        return migration_manager.run_migrations()
 
     @contextmanager
     def get_connection(self) -> Generator[sqlite3.Connection, None, None]:
