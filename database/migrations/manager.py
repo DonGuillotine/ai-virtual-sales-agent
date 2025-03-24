@@ -3,16 +3,23 @@ import logging
 from pathlib import Path
 import sqlite3
 import re
-from typing import List, Tuple
+from typing import List, Tuple, TYPE_CHECKING, Any
 
-from database.db_manager import DatabaseManager
+if TYPE_CHECKING:
+    from database.db_manager import DatabaseManager
 
 logger = logging.getLogger(__name__)
 
 class MigrationManager:
     """Manages database migrations to evolve the schema over time."""
     
-    def __init__(self, db_manager: DatabaseManager):
+    def __init__(self, db_manager: Any):
+        """
+        Initialize the migration manager.
+        
+        Args:
+            db_manager: The database manager instance
+        """
         self.db_manager = db_manager
         self.migrations_dir = Path(os.path.dirname(__file__)) / "versions"
         self._ensure_migration_table()

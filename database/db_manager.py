@@ -3,8 +3,7 @@ import os
 import sqlite3
 from contextlib import contextmanager
 from pathlib import Path
-from typing import Generator, Optional
-from database.migrations.manager import MigrationManager
+from typing import Generator, Optional, TYPE_CHECKING
 
 import pandas as pd
 
@@ -40,7 +39,13 @@ class DatabaseManager:
             with self.get_connection() as conn:
                 logger.info(f"Created database at {self.config.db_path}")
             
-            # Apply migrations
+            # If schema path exists, execute schema first
+            if self.config.schema_path and os.path.exists(self.config.schema_path):
+                if not self.execute_sql_file(self.config.schema_path):
+                    logger.error("Failed to execute schema SQL")
+                    return False
+            
+            # Apply any additional migrations
             return self.run_migrations()
             
         except Exception as e:
@@ -49,6 +54,8 @@ class DatabaseManager:
     
     def run_migrations(self) -> bool:
         """Runs all pending database migrations."""
+        from database.migrations.manager import MigrationManager
+        
         migration_manager = MigrationManager(self)
         return migration_manager.run_migrations()
 

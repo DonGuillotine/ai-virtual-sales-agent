@@ -12,9 +12,12 @@ def setup_migrations():
     migrations_dir.mkdir(exist_ok=True)
     versions_dir.mkdir(exist_ok=True)
     
-    # Create __init__.py files
-    (migrations_dir / "__init__.py").touch()
-    (versions_dir / "__init__.py").touch()
+    # Proper __init__.py files to avoid circular imports
+    with open(migrations_dir / "__init__.py", 'w') as f:
+        f.write("# Migrations package\n")
+    
+    with open(versions_dir / "__init__.py", 'w') as f:
+        f.write("# Migration versions package\n")
     
     # Copy schema.sql to initial migration if it doesn't exist
     initial_migration_path = versions_dir / "001_initial_schema.sql"
@@ -34,18 +37,6 @@ def setup_migrations():
             print(f"Created initial migration from {schema_path}")
         else:
             print(f"Warning: Schema file {schema_path} does not exist")
-    
-    # Create a sample migration
-    sample_migration_path = versions_dir / "002_sample_migration.sql"
-    if not sample_migration_path.exists():
-        with open(sample_migration_path, 'w') as f:
-            f.write("-- Add customer_notes field to orders table\n")
-            f.write("ALTER TABLE orders ADD COLUMN customer_notes TEXT;\n\n")
-            f.write("-- Create index for faster product searches\n")
-            f.write("CREATE INDEX idx_product_name ON products(ProductName);\n")
-            f.write("CREATE INDEX idx_product_category ON products(Category);\n")
-        
-        print(f"Created sample migration {sample_migration_path}")
     
     print("Migration system setup complete!")
 
